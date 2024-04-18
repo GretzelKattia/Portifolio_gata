@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    /** margem **/
+    padding: 0;
+    /** NAO LEMBRO**/
+}
+
+body {
+    box-sizing: border-box;
+    /** **/
+    width: 100vw;
+    height: 100%;
+    /** margem **/
+    background-color: #E2DBBE;
+    /** cor de fundo **/
+    color: #B66D0D;
+    /** cor da letra **/
+    font-family: 'Comic Sans MS', sans-serif;
+    /** fonte utilizada **/
+    font-size: 16px;
+    /** o tamanho da fonte? **/
+    line-height: 1.5;
+    overflow-x: hidden;
+
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 9%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_menu_link{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#769FB6;
+    text-decoration: none;
+}
+
+.cabecalho_menu_link:hover {
+    text-decoration: underline overline;
+    color:#2f261c;
+
+}
+
+
+.titulo-destaque {
+    color: #769FB6;
+
+}
+
+.apresentacao {
+    margin: 5% 15%;
+    /** margens também, mas como foi colocado dois valores, pega o valor de cima e do lado direito (ele segue no sentido **/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* margin-right: 100px; */
+
+}
+
+.apresentacao_conteudo_titulo {
+
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.apresentacao_conteudo_texto {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.apresentacao__links {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .apresentacao_links_link {
+    /* background-color: #B8C4BB; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  
+    border: 3px double #B66D0D;
+  
+    width: 380px;
+    height: 29px;
+    text-align: center;
+    border-radius: 10px;
+    color: #B66D0D;
+    padding: 15px 0px;
+    text-decoration: none;
+    /* Sem decoração */
+  
+  
+    font-weight: 300;
+    font-style: normal;
+  
+    font-size: 20.5px;
+  
+  }
+  
+  
+  
+  
+  .apresentacao_links_link:hover {
+    /* color: #503047;
+      text-decoration: underline;
+      border: 2px dotted #503047; */
+  
+    padding: 3%;
+    background: #e4dbb3;
+    text-decoration: underline;
+    border: solid;
+  
+  
+  }
+
+.rodape {
+    padding: 20px;
+    text-align: center;
+    background-color: #769FB6;
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #E2DBBE;
+}
