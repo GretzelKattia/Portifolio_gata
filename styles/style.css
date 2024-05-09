@@ -85,45 +85,35 @@ body {
 
 .apresentacao__links {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     gap: 15px;
   }
   
   .apresentacao_links_link {
-    /* background-color: #B8C4BB; */
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: 16px;
-  
     border: 3px double #B66D0D;
   
     width: 380px;
     height: 29px;
-    text-align: center;
     border-radius: 10px;
     color: #B66D0D;
     padding: 15px 0px;
-    text-decoration: none;
-    /* Sem decoração */
-  
+    text-decoration: none;  
   
     font-weight: 300;
     font-style: normal;
   
     font-size: 20.5px;
-  
   }
   
   
   
   
   .apresentacao_links_link:hover {
-    /* color: #503047;
-      text-decoration: underline;
-      border: 2px dotted #503047; */
-  
     padding: 3%;
     background: #e4dbb3;
     text-decoration: underline;
@@ -140,3 +130,55 @@ body {
     font-weight: 400;
     color: #E2DBBE;
 }
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__menu{
+      font-size: 90%;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+  
+    
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        /* padding: 5%; */
+    }
+    .apresentacao__conteudo{
+        width: 100%;
+        margin-right: 0px;
+    }
+  
+    .apresentacao_conteudo_titulo {
+      font-size: 100%;
+    }
+  
+    .apresentacao_conteudo_texto {
+      font-size: 100%;
+  
+    }
+  
+    .genia_miau_miau {
+      width: 100%;
+      height: auto;
+    }
+
+    .apresentacao__links {
+        flex-direction: column;
+        justify-content:center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .apresentacao__links .apresentacao_links_link .icone_instagram {
+        width: 30%;
+        height: 30%;
+      }
+  
+    .rodape {
+      font-size: 100%;
+    }
+  }
